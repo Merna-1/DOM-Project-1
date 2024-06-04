@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart">
+        <h1>Shopping Cart</h1>
+        <div class="cart-item" data-price="10">
+            <p>My Neighbor Totoro</p>
+            <img src="totoro .jpg" alt="Totoro" class="like-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/100'; this.alt='Image not found';">
+            <div class="quantity-control">
+                <button class="decrease-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="increase-btn">+</button>
+            </div>
+            <p class="item-total">$10</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="cart-item" data-price="20">
+            <p>Spirited Away</p>
+            <img src="spirited_away.jpg" alt="Spirited Away" class="like-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/100'; this.alt='Image not found';">
+            <div class="quantity-control">
+                <button class="decrease-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="increase-btn">+</button>
+            </div>
+            <p class="item-total">$20</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+        <div class="cart-item" data-price="15">
+            <p>Howl's Moving Castle</p>
+            <img src="howls_moving_castle.jpg" alt="Howl's Moving Castle" class="like-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/100'; this.alt='Image not found';">
+            <div class="quantity-control">
+                <button class="decrease-btn">-</button>
+                <span class="quantity">1</span>
+                <button class="increase-btn">+</button>
+            </div>
+            <p class="item-total">$15</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+        <h2>Total: $<span id="total-price">45</span></h2>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
